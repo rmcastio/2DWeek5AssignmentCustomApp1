@@ -12,7 +12,7 @@ public class Main {
         System.out.println(input);
     }
 
-    static boolean isValid (in input, int lowerBound, int upperBound) {
+    static boolean isValid (int input, int lowerBound, int upperBound) {
         System.out.print("This Method validates if integer input is within range.");
         boolean output = false;
         if (input >= lowerBound && input <= upperBound) {
@@ -43,19 +43,20 @@ public class Main {
         boolean isValidDoubleInput = false;
         Scanner sc = new Scanner(System.in);
 
-    }
-    do {
-        displayString("Enter Integer (100-1000): ");
-        int userInput;
-        userInput = sc.nextInt();
-        isValidInteger = isValid(userInput, lowerBound, upperBound); }
-    while (!isValidIntegerInput);
 
-    do {
-        displayString("Enter a double (100-1000): ");
-        double userInput;
-        userInput = sc.nextDouble();
-        isValidDoubleInput = is Valid(userInput, lowerBound, upperBound); }
-    while (!isValidDoubleInput);
+        do {
+            displayString("Enter Integer (100-1000): ");
+            int userInput;
+            userInput = sc.nextInt();
+            isValidInteger = isValid(userInput, lowerBound, upperBound); }
+        while (!isValidIntegerInput);
+
+        do {
+            displayString("Enter a double (100-1000): ");
+            double userInput;
+            userInput = sc.nextDouble();
+            isValidDoubleInput = isValid(userInput, lowerBound, upperBound); }
+        while (!isValidDoubleInput);
     }
+
 }
