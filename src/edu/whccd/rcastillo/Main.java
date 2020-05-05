@@ -39,12 +39,25 @@ public class Main {
     public static void main(String[] args) {
         int lowerBound = 100;
         int upperBound = 1000;
+
+        Scanner sc = new Scanner(System.in);
+
         boolean isValidInteger = false;
         boolean isValidDoubleInput = false;
 
-        Scanner sc = new Scanner(System.in);
     }
     do {
-        displayString();
+        displayString("Enter Integer (100-1000): ");
+        int userInput;
+        userInput = sc.nextInt();
+        isValidInteger = isValid(userInput, lowerBound, upperBound); }
+    while (!isValidIntegerInput);
+
+    do {
+        displayString("Enter a double (100-1000): ");
+        double userInput;
+        userInput = sc.nextDouble();
+        isValidDoubleInput = is Valid(userInput, lowerBound, upperBound); }
+    while (!isValidDoubleInput);
     }
 }
