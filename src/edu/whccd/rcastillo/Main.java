@@ -39,11 +39,9 @@ public class Main {
     public static void main(String[] args) {
         int lowerBound = 100;
         int upperBound = 1000;
-
-        Scanner sc = new Scanner(System.in);
-
         boolean isValidInteger = false;
         boolean isValidDoubleInput = false;
+        Scanner sc = new Scanner(System.in);
 
     }
     do {
