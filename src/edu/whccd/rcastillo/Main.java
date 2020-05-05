@@ -13,25 +13,25 @@ public class Main {
     }
 
     static boolean isValid (int input, int lowerBound, int upperBound) {
-        System.out.print("This Method validates if integer input is within range.");
+        System.out.print("This Method validates if integer input is within range. ");
         boolean output = false;
         if (input >= lowerBound && input <= upperBound) {
             output = true;
-            displayString(input + "Within range");
+            displayString( input + " " + " Within range");
         } else {
-            displayString(input + "Not within Range");
+            displayString( input + " " + " Not within Range");
         }
         return output;
     }
 
     static boolean isValid(double input, double lowerBound, double upperBound) {
-        System.out.print("This Method validates if double input is within range.");
+        System.out.print("This Method validates if double input is within range. ");
         boolean output = false;
         if (input >= lowerBound && input <= upperBound) {
             output = true;
-            displayString(input + "Within range");
+            displayString(input + " " + "Within range");
         } else {
-            displayString(input + "Not within Range");
+            displayString(input + " " + "Not within Range");
         }
         return output;
     }
@@ -49,7 +49,7 @@ public class Main {
             int userInput;
             userInput = sc.nextInt();
             isValidInteger = isValid(userInput, lowerBound, upperBound); }
-        while (!isValidIntegerInput);
+        while (!isValidInteger);
 
         do {
             displayString("Enter a double (100-1000): ");
